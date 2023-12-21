@@ -1,0 +1,128 @@
+
+/* HEADER - START*/
+
+.header{
+  position: relative;
+  padding: 12px 0;  
+  box-shadow: 0px 4px 12px 0px rgba(207, 207, 207, 0.25); 
+
+  &-row{
+      @extend %flex-between;
+      justify-content: space-between;
+
+      @media screen and (max-width:900px) {
+        gap: 8px;
+      }
+  }
+
+  &-nav{
+    @media screen and (max-width:900px) {
+      display: none;
+    }
+  }
+
+  &-form{
+    @extend %flex-between;
+
+    @media screen and (max-width:900px) {
+      flex: 1 1 auto;
+    }
+
+    @media screen and (max-width:500px) {
+      display: none;
+    }
+
+  }
+
+  &-link{
+      color: $text-color;
+      font-weight: 400;
+      line-height: 178.187%;
+      transition: all 0.2s ease-in-out;
+      
+      &:not(:last-child){
+        border-right: 1px solid #EFEFEF;
+        padding-right: 16px;
+        margin-right: 16px;
+
+        @media screen and (max-width: 1024px){
+          margin-right: 10px;
+          padding-right: 10px;
+        }
+      }
+
+      &:hover{
+          color: #359740;
+      }
+  }
+  &-social:not(:last-child){
+    margin-right: 8px;
+  }
+  &-buttons{
+    @extend %flex-between;
+    gap: 24px;
+
+    @media screen and (max-width:1024px) {
+      gap: 6px;
+    }
+
+    @media screen and (max-width:500px) {
+      gap: 16px;
+    }
+  }
+
+  &-button{
+    @media screen and (max-width:500px){
+      width: 40px;
+      height: 40px;
+      border: 1px solid $grey-color;
+      border-radius: 50%;
+    }
+
+  }
+
+  &-mobile{
+    display: none;
+
+    @media screen and (max-width:900px){
+      display: block;
+    }
+  }
+}
+.search{
+  &-form{
+    @extend %flex-between;
+    padding: 12px 20px;
+    border-radius: 71px;
+    border: 1px solid #efefef;
+    gap: 16px;
+
+
+    @media screen and (max-width:1024px) {
+      padding: 6px 10px;
+    }
+
+    @media screen and (max-width:900px) {
+      flex-grow: 1;
+    }
+
+  }
+  &-input{
+    border: none;
+    outline: none;
+    color: #70737C;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 178.187%;
+
+    &::placeholder{
+      color: #70737C;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 178.187%;
+    }
+  }
+}
+
+
+/* HEADER - END*/

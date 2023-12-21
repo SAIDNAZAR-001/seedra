@@ -1,0 +1,82 @@
+.main-weSell{
+  height: 104px;
+  border-radius: 12px;
+  background: rgba(255, 230, 46, 0.09);
+  @extend %flex-between;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  justify-content:center;
+
+
+  &-none1{
+
+    &__img1{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      img{
+        @media screen and (max-width:650px) {
+          width: 180px;
+        }
+      }
+    }
+  }
+  &-none2{
+
+    &__img2{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      img{
+        @media screen and (max-width:650px) {
+          width: 180px;
+        }
+      }
+    }
+  }
+
+
+
+
+  &-title{
+    @extend %flex-between;
+    text-align: center;
+
+    span{
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 178.187%; /* 28.51px */
+      letter-spacing: -0.56px;
+    }
+    
+    @media screen and (max-width:891px) {
+      text-align: center; 
+      
+    }
+
+    @media screen and (max-width:690px) {
+      width: 252px;
+      height: 58px;
+    }
+
+    &_title{
+      color: $black-color;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 31.5px; /* 131.25% */
+      letter-spacing: -0.48px;
+
+
+      @media screen and (max-width:900px) {
+        position: relative;
+        z-index: 1;
+        width: 292px;
+        height: 90px;
+      }
+    }
+  }
+}

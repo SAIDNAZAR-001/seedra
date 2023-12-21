@@ -1,0 +1,78 @@
+.main{
+
+    &-seedraHelps{
+        @extend %flex-between;
+
+        @include media(1230){
+            gap: 50px;
+        }
+        @include media(1100){
+            gap: 30px;
+        }
+        @include media(940){
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
+        &-text{
+            @extend %flex-between;
+            flex-direction: column;
+            
+            &__title{
+                color: $black-color;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 150%;
+                letter-spacing: -1.8px;
+
+                @include media(600){
+                    font-size: 22px;
+                }
+            }
+
+            &__sobtitle{
+                color: $black-color;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 175%;
+            }
+        }
+
+        &-img{
+            width: 100%;
+            height: 549.669px;
+            display: flex;
+            align-items: center;
+            
+            
+
+
+
+            img{
+                @include media(1230){
+                    width: 550px;
+                }
+                @include media(1100){
+                    width: 450px;
+                    
+                }
+                @include media(940){
+                    width: 450px;
+                    height: 389.669px;
+                    justify-content: center;
+                    
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+    
+                @include media(600){
+                    width: 380px;
+                    height: 340px;
+                }
+            }
+        }
+    }
+}

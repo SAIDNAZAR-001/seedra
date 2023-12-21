@@ -1,0 +1,175 @@
+/* Our products - start*/
+
+.main-ourProducts{
+    margin-bottom: 89px;
+    
+    &-title{
+        @extend %flex-between;
+        padding: 48px 0px 40px 0px;
+        gap: 721px;
+
+        &_text{
+            color: $black-color;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 54px; /* 150% */
+            letter-spacing: -1.8px;
+        }
+        &_button{
+            width: 155px;
+            height: 51px;
+            color: $green-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 178.187%; /* 28.51px */
+            letter-spacing: -0.56px;
+            border-radius: 8px;
+            border: 1px solid $grey-color;
+            background: var(--white, #FFF);
+
+            &:hover{
+                color: $black-color ;
+            }
+        }
+
+    }
+    
+    &-departments{
+        @extend %flex-between;
+        gap: 12px;
+        margin-bottom: 32px;
+        
+        &_all{
+            padding: 22px 30px 22px 19px;
+            @extend %flex-between;
+            gap: 8px;
+            border-radius: 8px;
+            border: 2px solid $grey-color;
+
+            p{
+                color: $black-color;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 178.187%; /* 24.946px */
+            }
+        }
+
+    }
+    &-thing{
+        @extend %flex-between;
+        flex-direction: column;
+        gap: 25px;
+
+        &-top{
+            @extend %flex-between;
+            gap: 25px;
+
+            &_one{
+                width: 350px;
+                height: 512px;
+                border-radius: 8px;
+                border: 2px solid $grey-color;
+                padding: 28px;
+
+                &_heart{
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    transform: translate(674%,-40%);
+                    border-radius: 16px;
+                    background-color: #FFF;
+                    border: 1px solid var(--light_grey_stroke, #EFEFEF);
+                }
+                &_heart2{
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    transform: translate(674%,-40%);
+                    border-radius: 16px;
+                    background-color: #FFF;
+                    border: 1px solid var(--light_grey_stroke, #FFCF55  );
+                }
+
+                img{
+                    margin-bottom: 24px;
+                }
+                &_star{
+                    @extend %flex-between;
+                    gap: 1px;
+
+                    p{
+                        padding-left: 13px;
+                        color: $text-color;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 178.187%; /* 24.946px */
+                    }
+                }
+                &_text{
+                    margin-bottom: 8px;
+                    color: $black-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 25px; /* 156.25% */
+                    letter-spacing: -0.64px;
+                }
+                &_price{
+                    @extend %flex-between;
+                    gap: 170px;
+
+                    p{
+                        color: $black-color;
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 54px; /* 192.857% */
+                    }
+
+                    &_svg{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 8px;
+                        border: 1px solid $grey-color;
+                        padding: 12px;
+                    }
+                }
+                &_price2{
+                    @extend %flex-between;
+                    gap: 73px;
+                    
+                    &_price{
+                        @extend %flex-between;
+                        
+
+                        &_cheap{
+                            margin-left: 3px;
+                            color: $black-color;
+                            font-size: 28px;
+                            font-weight: 600;
+                            line-height: 54px; /* 192.857% */
+                        }
+                        &_price{
+                            margin-left: 15px;
+                            color: $text-color;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 178.187%; /* 28.51px */
+                            letter-spacing: -0.56px;
+                        }
+                    }
+
+                    &_svg{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 8px;
+                        border: 1px solid $grey-color;
+                        padding: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Our products - end*/
